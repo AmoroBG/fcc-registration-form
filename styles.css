@@ -16,6 +16,9 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.heading h1{
+    color: coral;
+}
 form, fieldset{
     display: flex;
     flex-direction: column;
@@ -73,4 +76,13 @@ form a{
 form a:hover{
     color: royalblue;
     text-decoration: underline;
+}
+
+/* Media Queries */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   form{
+    width: 35rem;
+    margin: 0 auto;
+   }
 }
