@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <h1>Registration Form</h1>
+            <p>Please fill out this form with the required information</p>
+        </div>
+        <form action="">
+            <fieldset>
+                <legend>Personal information</legend>
+                <div class="first-name">
+                    <label for="first-name">Enter Your First name:</label>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div class="last-name"></div>
+                    <label for="last-name">Enter Your Last Name:</label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+                <div class="email"></div>
+                    <label for="email">Enter Your Email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="password"></div>
+                    <label for="password">Create a New Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </fieldset>
+        <fieldset>
+            <legend>Account type</legend>
+            <div class="radio">
+                <input type="radio" name="account-type" id="personal"><span>Personal</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="account-type" id="business"><span>Business</span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Other details</legend>
+            <div class="profile-picture">
+                <label for="profile-picture">Upload a profile picture:</label>
+                <input type="file" name="profile-picture" id="profile-picture">
+            </div>
+            <div class="age">
+                <label for="age">Input your age (years):</label>
+                <input type="text" name="age" id="age">
+            </div>
+            <div class="hear">
+                <label for="hear">How did you hear about us?</label>
+                <select name="hear" id="hear" aria-placeholder="select one">
+                    <option value="select-one">(select one) </option>
+                    <option value="freecodecampnews">FreeCodeCamp News</option>
+                    <option value="freecodecampyoutube">FreeCodeCamp YouTube Channel</option>
+                    <option value="freecodecampforum">FreeCodeCamp Forum</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="bio">
+                <label for="bio">Provide a bio</label>
+                <textarea name="bio" id="" cols="30" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Declaration</legend>
+           <div class="declaration">
+            <input type="checkbox" name="terms" id="terms"> <span>I accept the <a href="#">terms and conditions</a> </span>
+           </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
